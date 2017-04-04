@@ -1,7 +1,7 @@
 # RADAR-CNS Security Platform
 
 This is a dedicated component stack, to get started with security implementation of `RADAR-CNS`.
-The `docker-compose` includes `radar-rest-api`, `hotstorage` and `wso2-identity-server` which communicate via 'api' network.
+The `docker-compose` includes `zookeeper`, `kafka-brokers`, `schema-registry`, `rest-proxy`, `radar-rest-api`, `hotstorage` from `RADAR-Docker` repository's Hadoop stack, and `wso2-identity-server` which communicate via 'api' network.
 
 This `docker-compose` reuses a subset of [compose-wso2](https://github.com/ihcsim/compose-wso2).
 ### Usage
