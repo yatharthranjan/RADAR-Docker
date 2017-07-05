@@ -54,7 +54,6 @@ inline_variable 'username:[[:space:]]*' "${RADAR_IS_USERNAME}" etc/rest-api/rada
 inline_variable 'password:[[:space:]]*' "${RADAR_IS_PASSWORD}" etc/rest-api/radar-is.yml
 inline_variable 'tokenValidationEndpoint:[[:space:]]*' "${RADAR_IS_TOKEN_VALIDATION_ENDPOINT}" etc/rest-api/radar-is.yml
 inline_variable 'publicKeyEndpoint:[[:space:]]*' "${RADAR_IS_PUBLIC_KEY_ENDPOINT}" etc/rest-api/radar-is.yml
-export RADAR_IS_CONFIG_LOCATION=$(pwd)/etc/rest-api/radar-is.yml
 
 echo "==> Configuring nginx"
 copy_template_if_absent etc/nginx.conf

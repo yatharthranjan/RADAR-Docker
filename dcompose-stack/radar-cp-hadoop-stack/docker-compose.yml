@@ -201,6 +201,8 @@ services:
       interval: 1m
       timeout: 5s
       retries: 3
+    environment:
+      RADAR_IS_CONFIG_LOCATION: /usr/local/tomcat/conf/radar/radar-is.yml
 
   #---------------------------------------------------------------------------#
   # RADAR Dashboard                                                           #
